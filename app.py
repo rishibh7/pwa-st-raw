@@ -18,15 +18,4 @@ st.code(f'''
 # Include the PWA manifest and service worker
 components.html("""
 <link rel="manifest" href="https://rishibh7.github.io/pwa-st-raw/manifest.json">
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('https://rishibh7.github.io/pwa-st-raw/service-worker.js')
-    .then(function(registration) {
-      console.log('Service Worker registered with scope:', registration.scope);
-    })
-    .catch(function(error) {
-      console.log('Service Worker registration failed:', error);
-    });
-  }
-</script>
 """, height=0)

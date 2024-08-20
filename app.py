@@ -15,12 +15,16 @@ st.code(f'''
 🕒 Current Time: {current_time.strftime("%H:%M:%S")}
 ''')
 
+
 # Include the PWA manifest and service worker
+
+# navigator.serviceWorker.register('https://rishibh7.github.io/pwa-st-raw/service-worker.js', {scope: '/-/build/'})
+
 components.html("""
 <link rel="manifest" href="https://rishibh7.github.io/pwa-st-raw/manifest.json">
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('https://rishibh7.github.io/pwa-st-raw/service-worker.js', {scope: '/-/build/'})
+    navigator.serviceWorker.register('https://rishibh7.github.io/pwa-st-raw/service-worker.js')
     .then(function(registration) {
       console.log('Service Worker registered with scope:', registration.scope);
     })

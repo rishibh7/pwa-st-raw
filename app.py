@@ -20,7 +20,7 @@ components.html("""
 <link rel="manifest" href="https://rishibh7.github.io/pwa-st-raw/manifest.json">
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('https://rishibh7.github.io/pwa-st-raw/service-worker.js')
+    navigator.serviceWorker.register('https://rishibh7.github.io/pwa-st-raw/service-worker.js', {scope: '/-/build/'})
     .then(function(registration) {
       console.log('Service Worker registered with scope:', registration.scope);
     })

@@ -20,6 +20,8 @@ st.code(f'''
 
 # navigator.serviceWorker.register('https://rishibh7.github.io/pwa-st-raw/service-worker.js', {scope: '/-/build/'})
 
+# including static github pages: https://rishibh7.github.io/pwa-st-raw/manifest.json, https://rishibh7.github.io/pwa-st-raw/service-worker.js
+
 components.html("""
 <link rel="manifest" href="https://rishibh7.github.io/pwa-st-raw/manifest.json">
 <script>

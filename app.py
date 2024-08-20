@@ -23,10 +23,10 @@ st.code(f'''
 # including static github pages: https://rishibh7.github.io/pwa-st-raw/manifest.json, https://rishibh7.github.io/pwa-st-raw/service-worker.js
 
 components.html("""
-<link rel="manifest" href="https://rishibh7.github.io/pwa-st-raw/manifest.json">
+<link rel="manifest" href="/manifest.json">
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('https://rishibh7.github.io/pwa-st-raw/service-worker.js')
+    navigator.serviceWorker.register('/service-worker.js')
     .then(function(registration) {
       console.log('Service Worker registered with scope:', registration.scope);
     })

@@ -5,7 +5,7 @@ from datetime import datetime
 # Set page config (optional)
 # st.set_page_config(page_title="My Streamlit PWA", page_icon="icon-192x192.png")
 
-st.subheader("Streamlit PWA Test", divider="rainbow")
+st.subheader("Streamlit PWA Test 📱", divider="rainbow")
 
 india_tz = pytz.timezone('Asia/Kolkata')
 current_time = datetime.now(india_tz)
